@@ -29,19 +29,19 @@ If possible, please provide the following info to help us track down and resolve
 
 Check out [reference] for definitions of all Modify concepts, including `artifacts`.
 
-## What plain text formats does Modify support?
+## What plain text formats are supported?
 
 Markdown (most of the GitHub-flavoured markdown spec), [MDX](https://mdxjs.com/) and yaml. 
 
 Send us a feature request if you'd like other formats supported!
 
-## Do I need to commit changes I make to artifacts? 
+## Do I need to commit changes to files? 
 
 Uncommitted changes are saved to Modify's database, so you won't lose them if you don't commit them. 
 
 However, since committing also pushes them to a remote branch defined in a connector, we recommend you do, as it's a good way for you to retain access to your data.
 
-## How can I edit artifacts in a GitHub or Bitbucket connector?
+## How do I edit files in GitHub/Bitbucket connectors?
 
 Artifacts and directories in a GitHub or Bitbucket connector's remote branch are protected by default.
 
@@ -49,7 +49,7 @@ You'll therefore need to create an editable workspace branch before you can edit
 
 To do this, click the branch button in the top right of the repository's header bar and complete the form.
 
-## Does Modify integrate changes made directly to my GitHub or Bitbucket connector's remote branch?
+## Can I make changes to a Git repo outside of Modify?
 
 Changes integrated into your remote branch outside of Modify are automatically read by Modify and shown in the remote branch in Modify's repository page. 
 

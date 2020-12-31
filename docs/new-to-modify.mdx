@@ -4,6 +4,8 @@ title: New to Modify
 description: Getting set up and productive for users who are new to Modify.
 ---
 
+import Callout from 'nextra-theme-docs/callout'
+
 ## Concepts
 
 Modify concepts are used throughout and are defined in [reference].
@@ -14,8 +16,8 @@ Modify concepts are used throughout and are defined in [reference].
 
 Onboarding consists of two simple steps:
 
-1. Login with GitHub or Google
-1. Create a unique username
+- Login with GitHub or Google
+- Create a unique username
 
 After this a personal `team` is created automaticaly for you and adds some `workspaces` with example content to your team.
 
@@ -43,7 +45,9 @@ First off, you will need to authenticate with your Git provder, install the Modi
 
 Next, you will need to configure your connector, giving it a name and id, and selecting a remote repository and branch. Now click `Add connector` to create your connector. 
 
-<InfoMessage header="External git provider connectors" content="You'll need accounts and Git repositories set up already to create connectors to GitHub and Bitbucket."/>
+<Callout emoji="⚠️">
+  You'll need accounts and Git repositories set up already to create connectors to GitHub and Bitbucket.
+</Callout>
 
 Once created, your `connector` will appear in your repository's tree and you can view its directories and files (or `artifacts`, as we call them).
 
@@ -57,7 +61,7 @@ To create a `Workspace branch`, click the `Branch workspace` button in t
 
 Your new branch will now be selected in the repository's breadcrumb and you can get on with collaborating on `artifacts`.
 
-## Collaborate on artifacts
+## Create content
 
 Collaborating on artifacts takes place in your repository. 
 
@@ -83,7 +87,9 @@ Now enter the file's path (e.g. `my-doc.md`) and click the `Add a fil
 
 You can now add content to your doc using GitHub-flavoured markdown.
 
-<InfoMessage header="New to Markdown?" content="Use the editor's cheatsheet to famliarise yourself with the syntax, and its toolbar to add syntax to your docs"/>
+<Callout emoji="💡">
+  New to Markdown? Use the editor's cheatsheet to famliarise yourself with the syntax, and its toolbar to add syntax to your docs
+</Callout>
 
 #### Add components with MDX
 
@@ -190,7 +196,9 @@ graph LR
 
 Use the preview view to see `diagrams` rendered on the fly and spot syntax errors quickly.
 
-<InfoMessage header="Boostrap your diagrams" content="Checkout https://mermaid-js.github.io/mermaid/#/, https://www.graphviz.org/ and http://www.nomnoml.com/ for examples to adapt in your own diagrams."/>
+<Callout emoji="💡">
+  Checkout the [mermaid](https://mermaid-js.github.io/mermaid/#/), [grahpviz](https://www.graphviz.org/) and [nomnoml](http://www.nomnoml.com/) websites for examples to adapt in your own diagrams.
+</Callout>
 
 ### Use editor shortcuts
 
@@ -218,7 +226,7 @@ In the modal, select the target branch (defaulted to your current branch)�
 
 When you're happy, click the `Update from workspace branch` button to perform the update operation. Currently, conflicts are merged as part of the update operation, and can be resolved manually with a subsequent commit. We plan to improve this 😉
 
-## Review your changes
+## Review changes
 
 ### Create a review
 
@@ -250,7 +258,7 @@ Once these checks have passed, click the `Merge` button to fast forward merge yo
 
 Once merged, the status of your review will change from `pending` to `merged`. You can now navigate to the target branch in your repository and observe the integrated changes.
 
-## Render and publish artifacts
+## Build and publish
 
 `Jobs` allow you to define custom jobs in Modify that trigger an HTTP request to an external service for execution. 
 
@@ -278,7 +286,7 @@ Once defined, your job will appear in a list on the `jobs` page. To trigger it m
 Your job will now run and will be added to the list with an `in progress` status below the job definition on the job's detail page. Once the job completes, provided the job includes a notification to the Modify API of completion status (as with the jobs in all Tutorials), the status of your job will change to `Finished`. 
 Click the refresh button to get the up-to-date status.
 
-## Manage your settings
+## Manage settings
 
 ### Teams
 
