@@ -4,8 +4,6 @@ title: New to Modify
 description: Getting set up and productive for users who are new to Modify.
 ---
 
-import Callout from 'nextra-theme-docs/callout'
-
 ## Concepts
 
 Modify concepts are used throughout and are defined in [reference].
@@ -45,9 +43,7 @@ First off, you will need to authenticate with your Git provder, install the Modi
 
 Next, you will need to configure your connector, giving it a name and id, and selecting a remote repository and branch. Now click `Add connector` to create your connector. 
 
-<Callout emoji="⚠️">
-  You'll need accounts and Git repositories set up already to create connectors to GitHub and Bitbucket.
-</Callout>
+<InfoMessage header="External git provider connectors" content="You'll need accounts and Git repositories set up already to create connectors to GitHub and Bitbucket."/>
 
 Once created, your `connector` will appear in your repository's tree and you can view its directories and files (or `artifacts`, as we call them).
 
@@ -87,9 +83,7 @@ Now enter the file's path (e.g. `my-doc.md`) and click the `Add a fil
 
 You can now add content to your doc using GitHub-flavoured markdown.
 
-<Callout emoji="💡">
-  New to Markdown? Use the editor's cheatsheet to famliarise yourself with the syntax, and its toolbar to add syntax to your docs
-</Callout>
+<InfoMessage header="New to Markdown?" content="Use the editor's cheatsheet to famliarise yourself with the syntax, and its toolbar to add syntax to your docs"/>
 
 #### Add components with MDX
 
@@ -196,9 +190,7 @@ graph LR
 
 Use the preview view to see `diagrams` rendered on the fly and spot syntax errors quickly.
 
-<Callout emoji="💡">
-  Checkout the [mermaid](https://mermaid-js.github.io/mermaid/#/), [grahpviz](https://www.graphviz.org/) and [nomnoml](http://www.nomnoml.com/) websites for examples to adapt in your own diagrams.
-</Callout>
+<InfoMessage header="Boostrap your diagrams" content="Checkout https://mermaid-js.github.io/mermaid/#/, https://www.graphviz.org/ and http://www.nomnoml.com/ for examples to adapt in your own diagrams."/>
 
 ### Use editor shortcuts
 

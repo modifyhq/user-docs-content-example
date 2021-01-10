@@ -3,7 +3,6 @@ id: index
 title: Index
 description: What makes Modify different. 
 ---
-import Callout from 'nextra-theme-docs/callout'
 
 # Modify
 
@@ -13,9 +12,7 @@ Modify is a modern publishing worflow for software teams.
 
 What's different about Modify is that it helps software teams manage content with the tools they already know and love.
 
-<Callout emoji="✅">
-  With Modify, software teams get to use <strong>markdown/MDX, Git</strong> and <strong>popular build tools</strong> to create, build and publish content.
-</Callout>
+<InfoMessage header="Key differentiator" content="With Modify, software teams get to use markdown/MDX, Git and popular build tools to create, build and publish content."/>
 
 ## Features
 
