@@ -1,301 +1,326 @@
 ---
 id: new-to-modify
 title: New to Modify
-description: Getting set up and productive for users who are new to Modify.
+description: Getting set up and productive for users new to Modify.
+kind: doc
 ---
 
 ## Concepts
 
-Modify concepts are used throughout and are defined in [reference].
+Modify concepts are used throughout and are defined in [reference].
 
-## Get set up
+## Get set up
 
-### Onboard
+### Sign up
 
-Onboarding consists of two simple steps:
+Login with a GitHub or Google account and provide a unique username for your account.
 
-- Login with GitHub or Google
-- Create a unique username
+A personal team will be created for your automatically, which you can invite collaborators to later on.
 
-After this a personal `team` is created automaticaly for you and adds some `workspaces` with example content to your team.
+You'll then be directed to the Mission Control page, where you'll see some example [reference/#Workspace].
 
 ### Explore example workspaces
 
-`Workspaces` are containers for `connectors`, `reviews` and `jobs`. 
+A workspace is a container for connectors, reviews and jobs. 
 
-The Mission Control page comes set up with `workspaces` containing example content for common use cases. Click the `Repository` button next to the workspace name to explore. 
+The Mission Control page comes set up with workspaces containing example content for common use cases. Click the Repository button next to the workspace name to explore.
 
 ### Set up your own workspace 
 
-To create a new `workspace`, click the plus icon on the `workspaces` UI container on the Mission Control page and fill out the form.
+To create a new workspace, click the plus icon on the workspaces container on the Mission Control page and fill out the form.
 
-Once created, click the `Setup your workspace` button. This will take you to your repository, where you can add a `connector` - a read-write integration to a Git repository. 
+Once created, click the Setup your workspace button, which will take you to your repository.
 
 ### Add a connector 
 
-Click the `Add connector` button to a add a `connector` to a Git repository hosted in Modify, GitHub or Bitbucket.
+In your repository, click the Add connector button to a add a [reference/#Connector] to a Git repository hosted in Modify, GitHub or Bitbucket.
 
-If you want to start exploring quickly, we recommend you choose a `Modify-hosted connector`, as you can always export your data later to GitHub or Bitbucket.
+If you want to start exploring quickly, we recommend you choose a [reference/#Modify-hosted-connector], as you can always export your data later to GitHub or Bitbucket.
 
-For connectors to external Git providers - GitHub and Bitbucket - you can use the OAuth-based setup flow to create a connector to a remote repository.
+<WarningMessage header="IMPORTANT" content="You'll need accounts and Git repositories set up already to create connectors to GitHub and Bitbucket."/>
 
-First off, you will need to authenticate with your Git provder, install the Modify app on an organisation (GitHub) or workspace (Bitbucket) you have permissions for and (for GitHub) configure the repositories you want to give Modify access to.
+For an [reference/#External-Git-provider-connector] (GitHub and Bitbucket), you can use the OAuth-based setup flow.
 
-Next, you will need to configure your connector, giving it a name and id, and selecting a remote repository and branch. Now click `Add connector` to create your connector. 
+First, you'll need to authenticate with your provider, install the Modify app on an organisation (GitHub) or workspace (Bitbucket) you have permissions for and (for GitHub only) configure the repositories you want to give Modify access to.
 
-<InfoMessage header="External git provider connectors" content="You'll need accounts and Git repositories set up already to create connectors to GitHub and Bitbucket."/>
+Next, you'll need to configure your connector, giving it a name and id, and selecting a remote repository and branch, then click `Add connector` to create your connector. 
 
-Once created, your `connector` will appear in your repository's tree and you can view its directories and files (or `artifacts`, as we call them).
 
-### Branch your workspace
+Once created, your connector will appear in your repository's tree and you can view its directories and files (or artifacts, as we call them).
 
-For `Modify Git connectors`, you can branch your `workspace` at any time to work in isolation from your team. This creates branches of all `connectors` and their `artifacts` and adds them to the new `workspace branch`. 
+### Branch your workspace
 
-For `external Git provider connectors`, you must create a `workspace branch` before you can edit `artifacts` and directories in your `connector`.
+For Modify connectors, you can branch your workspace at any time to work in isolation from your team. This creates branches of all connectors and their contents, and adds them to the new [reference/#Workspace-branch]`. 
 
-To create a `Workspace branch`, click the `Branch workspace` button in the top right of the repository's header bar. In the modal, select the branch you want to branch from, give your new branch a name and click the `Create branch` button.
+For external provider connectors, you must branch your workspace before you can edit a connector's contents. 
 
-Your new branch will now be selected in the repository's breadcrumb and you can get on with collaborating on `artifacts`.
+To create a workspace branch, click the Branch workspace button in the repository's header. In the modal, select the branch you want to branch from, give your new branch a name and click the Create branch button.
 
-## Create content
+Your new branch will now be selected in the breadcrumb and you can get on with collaborating on artifacts in your connectors.
 
-Collaborating on artifacts takes place in your repository. 
+## Collaborate on artifacts
 
-`Artifacts` are files stored in `connectors` and include markdown and MDX `docs`, yaml `registers`, svg, jpeg and png `images`, and PDFs rendered by jobs. The repository supports real-time collaboration on `docs` and `registers`. 
+The repository's editor supports real-time collaboration on any plain text [reference/#Artifact], including markdown/MDX docs and yaml registers. 
 
-To share an `artifact` with a `user` who is already a member of your team, copy the url using the icon in the view's header and send it to them. To share an artifact with someone who is not a member of your team, click the `collaborate` button in the repository's header and send an email invite to them.
+To share an artifact with someone who is already a member of your team, copy the url using the toolbar icon and send it to them.
 
-You can also move between `workspaces`, `workspace branches`, `connectors` and `artifacts` using the breadcrumb in the header bar.
+To share an artifact with someone who is not a member of your team, click the Share button in the repository's header and send an email invite.
 
-### Configure your layout 
+You can move between workspaces, workspace branches, connectors and artifacts using the breadcrumb in the header.
 
-You can configure your repository's layout and views to get the most out of your data. 
+### Configure your layout 
 
-Use the view selector dropdown in a view's header to select the view you want - editor, preview or table. In the menu, there are three presets to choose from - live preview, preview and editor. 
+You can configure your repository's layout to align with your preferences.
 
-You can also select `split view` to add an additional view to your layout. 
+Use the view selector dropdown to select the view combination you want - editor or preview for markdown/MDX docs; editor, table or board for yaml registers.
 
-### Create markdown docs
+### Create a markdown doc
 
-To add a markdown `doc`, hover over a directory in your repository's tree, click the plus button and select `New file` in the context menu.
+To add a markdown [reference/#Doc], hover over a directory in your repository's tree, click the plus button, select New file and fill out the form, being sure to add an `.md` file extension.
 
-Now enter the file's path (e.g. `my-doc.md`) and click the `Add a file` button.
+You can now add content to your doc using [GitHub-flavoured markdown](https://github.github.com/gfm/).
 
-You can now add content to your doc using GitHub-flavoured markdown.
+<InfoMessage icon="lightbulb" header="Pro Tip" content="If your markdown is rusty, use the editor's syntax cheatsheet for a refresh and toolbar to add it to your docs"/>
 
-<InfoMessage header="New to Markdown?" content="Use the editor's cheatsheet to famliarise yourself with the syntax, and its toolbar to add syntax to your docs"/>
+### Add components with MDX
 
-#### Add components with MDX
+[MDX](https://mdxjs.com/) enables you to extend your markdown docs with powerful visual components.
 
-[MDX](https://mdxjs.com/) enables you to embed components inside of markdown `docs` with JSX.
+You can use the editor's MDX cheatsheet to learn how the syntax works by clicking the syntax button in the editor's header. 
 
-You can use the editor's MDX cheatsheet to learn how the syntax works by clicking the `MDX syntax` button in the editor's header. 
+Clicking the `</>` button next to it, will launch a palette will available MDX components, where you can add MDX like this:
 
-Additionally, clicking the `</>` button next to it, will show a palette will available MDX components.
+<ArtifactTable field="kind" exact="doc" prefix="" postfix=""/>
 
-For more info on MDX syntax, you can also hover over the component name, once added to your editor, and inspect the tooltip.
+For contextual info on MDX syntax, you can hover over a component's name in your editor and inspect the tooltip. 
 
-### Create yaml registers
+<InfoMessage icon="heart" header="What's cookin'" content="✨ We're currently working on an npm package that will allow you to use our built-in MDX and other Modify syntax in your React and Vue apps. We also plan to add to our built-in component library, as well as support third-party components so you can bring your own ✨ "/>
 
-To add a yaml `register`, hover over a `connector` directory in your repository's tree and click the plus button. Select `New register` in the context menu, provide a `Title` and `id`, and click the `Add a register` button. 
+### Create a yaml register
 
-You will now see a `.modify.yaml` file appear in your register directory, which contains your register's configuration data including basic front matter (`Title` and `id`) and its schema.
+To add a [reference/#Register], hover over a connector directory in your repository's tree, click the plus button, select New register and fill out the form.
+
+You'll now see a `.modify.yaml` file in your register's directory, which contains configuration data and the schema for your register.
 
 #### Define a schema
 
 The quickest way to see a schema in action is to choose one of the templates provided, which you can then adapt to your own needs.
 
-Once selected, you will be redirected to the table view showing the columns from your newly selected schema. 
+Once selected, you'll be redirected to the table view. If you inspect the `.modify.yaml` file, you'll see the schema matches the columns in the table view.
 
-If now you inspect the `.modify.yaml`file, you will see the schema matches the columns in the table view. 
+You can also use the schema editor to define or update your schema by clicking the cog button in the table view's header.
 
-You can also use the schema editor to define or update your register's schema. You can launch this using the cog button in the table view's header. 
+### Using different views
 
-#### Using different views
-
-You can view and edit registers in text with your editor, or using various graphical view (table, form, board)
+You can edit register source files in the editor, or with the table, board and form graphical views.
 
 To use a graphical view, select the register directory in your tree and use the view dropdown to select the view you want. 
 
-To use your editor, simply select the text files in your tree. 
+To use your editor, simply select the yaml files in your tree. 
 
-Whichever view you decide to use, fields and their values are mapped between views, so they will always stay in sync. 
+Whichever view you decide to use, fields and their values are mapped between views, so they will always stay in sync.
 
-### Upload image and `docx` files
+### Upload files
 
-You can upload files individually or in bulk by clicking the `Upload files` button in the top right of the repository's header bar.
+You can upload files individually or in bulk by clicking the Upload files button in the repository's header.
 
-In the modal, select a target `connector` and directory destination, the files you want to upload (we support `docx`, `svg`, `jpeg` and `png` currently) and click the `Upload` button. For `docx`, this will convert your files to `markdown`.
+In the modal, select a target connector and directory destination, the files you want to upload.
 
-Once added to your repository, you can view using the preview view, and download using the link in the editor view.
+You can upload any files to your workspace. We provide editors for any text file format (markdown, MDX, yaml, csv, json, xml, plain text) along with live previews. 
 
-### Add front matter
+We also provide viewers for common image formats (png, jpeg, svg) and you can download binary files for formats that don't have viewers.
 
-`Front matter` contains structured metadata that is indexed and can be used to search for and reference `artifacts` using `relationships` and `MDX` elements. 
+MS Word documents (`*.docx`) will also be converted to markdown files automatically, to enable you to edit them and add front matter.
 
-You can add it to a `doc` or `register` by clicking the `Add front matter` button in the editor or preview view headers and filling out the `Title` and `Id` fields in the modal (other fields are optional). 
+### Add front matter
 
-Alternatively, you can add front matter directly to your artifact, ensuring that it is the first thing in it and takes the form of valid yaml between triple-dashed lines, e.g.
+[reference/#Front-matter] contains structured metadata that is indexed and can be used to search for and reference artifacts in your workspace using relationships and MDX elements. 
 
-Currently, `id` and `title` fields are indexed automatically and searchable using the editor's `artifact` search (see `relationships`).
+You can add it to a markdown doc or yaml register by clicking the Add front matter button in the editor or preview view headers and filling out form. 
+
+Alternatively, you can add front matter directly to your artifact, ensuring that it is the first thing in your file and takes the form of valid yaml between triple-dashed lines e.g.
+
+```yaml
+---
+id: my-id
+title: My title
+---
+```
+
+Currently, `id` and `title` fields are indexed automatically and searchable using the editor's artifact search.
 
 ### Define relationships
 
-`Relationships` help you reference `artifacts` in your repository using a plain text `id`. 
+[reference/#Relationships] allow you to reference artifacts in connectors in your workspace. This can be achieved in a few ways: 
 
-Your options for how to do this are shown in the editor's palette (activated by clicking the `</>` button in the editor's header).
+- using an artifact's `id` like so `[id-goes-here]`
+- using the Link MDX component like so `<Link artifactId="..."/>`
+- or by adding a relationship to front matter like so:
 
-You can add a simple relationship to another `artifact` like so: `[id-goes-here]`.
-
-To search for an `artifact`, press the ctrl + space keys to launch the `artifact` search, search by its `id` or `title`, and add it with the plus icon.
-
-Alternatively, you can define complex `relationships` in `front matter` like so:
-
-```
+```yaml
 ---
 relationships:
-  - id: my-file
-    direction: from | to
-    kind: implements | foo | bar | baz
+  - id: my-file
+    direction: from | to
+    kind: implements | foo | bar | baz
 ---
 ```
 
-Or using the `<Link/>` MDX component. 
+To search for an artifact, press CTRL + Space, search for an artifact by `id` or `title`, and add it to a file with the plus icon.
 
-Once defined, you can view a graph or table of the `relationships` between your `artifacts` by clicking the `Relationships` button in the side panel on the right. 
+You can view a graph or table of relationships by clicking the Relationships button in the side panel on the right. 
 
-You can then navigate between nodes in the graph or artifacts in the table using the links provided.
+You can then navigate between nodes in the graph or artifacts in the table using the links provided.
 
 ### Add diagrams
 
-You can define `diagrams` using the text-based formats mermaid, graphviz and nomnoml.
+You can define `diagrams` using the text-based formats [mermaid](https://mermaid-js.github.io/mermaid), [graphviz](https://graphviz.org) and [nomnoml](https://nomnoml.com).
 
-Simply open your editor's palette and choose a diagram format to add to your doc to explore your target syntax.
+You can add example diagrams to your docs using the editor's palette.
 
 Syntax for a simple mermaid diagram looks like:
 
-~~~
+````
 ```mermaid
-graph LR
-   a --> b & c--> d
-```
-~~~
+stateDiagram-v2
+    [*] --> Still
+    Still --> [*]
 
-which renders to
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+```
+````
+
+which renders to:
 
 ```mermaid
-graph LR
-   a --> b & c--> d
+stateDiagram-v2
+    [*] --> Still
+    Still --> [*]
+
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
 ```
 
-Use the preview view to see `diagrams` rendered on the fly and spot syntax errors quickly.
+Use the preview to see `diagrams` rendered on the fly and spot syntax errors.
 
-<InfoMessage header="Boostrap your diagrams" content="Checkout https://mermaid-js.github.io/mermaid/#/, https://www.graphviz.org/ and http://www.nomnoml.com/ for examples to adapt in your own diagrams."/>
+<InfoMessage icon="lightbulb" header="Pro Tip" content="Check out the mermaid, graphviz and nomnoml websites for examples to adapt in your own diagrams."/>
 
-### Use editor shortcuts
+### Add images 
 
-The text editor used in the editor view supports keyboard shortcuts for a number of common actions. Right click anywhere in the editor and select `Command palette` in the context menu to see a list of available shortcuts.
+You can upload images to your workspace using the upload feature, then using markdown syntax to reference your image file like so `![alt text](image-file.png)`.
 
-### Commit changes
+### Use editor shortcuts
 
-To `commit changes` to artifacts in your `connectors`, click the `commit changes` button in the top right of the repository's header bar.
+The text editor supports keyboard shortcuts for a number of common actions. Right click anywhere in the editor and select Command palette in the context menu to see a list of available shortcuts.
 
-In the modal, add a commit message describing your change, select the files you want to commit, and click the `Commit` button to commit them to a branch on your Git repository.
+### Commit changes
 
-### Inspect commit history
+To [reference/#Commit-changes] to your connectors, click the commit changes button in the repository's header.
 
-To inspect your commit history, hover over a file in your tree and click the `history` button to show a list of all your commits.
+Next, add a commit message describing your change, select the files you want to commit, and click the Commit button to write them to your connector's configured Git repository.
 
-In the modal, click on a commit ID to inspect a diff of a specific commit vs. the immediately preceding one.
+### Inspect commit history
 
-### Update a branch
+To inspect your commit history, hover over a file in your tree and click the history icon to show a list of all your commits.
 
-Updating a branch integrates changes from an upstream into a downstream branch. You may want to do this, for example, when you add a new `connector` to your `workspace` base branch that you want to access in a downstream branch.
+In the modal, click on a commit ID to inspect a diff of a specific commit vs. the immediately preceding one.
 
-To update a branch, first ensure you have committed your changes to the source branch you want to update from. Next, click the `Update` button in the top right of the repository's header bar. 
+### Merge changes
 
-In the modal, select the target branch (defaulted to your current branch) and source branch (branch to update from). This shows a diff with the changes committed on the source since the point at which the branches diverged.
+To merge changes from one workspace branch into another click the Merge button in the repository's header.
 
-When you're happy, click the `Update from workspace branch` button to perform the update operation. Currently, conflicts are merged as part of the update operation, and can be resolved manually with a subsequent commit. We plan to improve this 😉
+First, ensure you have committed your changes to the branch you want to update from, otherwise they will not be able to merge.
 
-## Review changes
+Next, select the target branch (defaulted to your current branch) and source branch (branch to update from). 
 
-### Create a review
+Finally check the diff shows the expected changes and click the Update from workspace branch button to perform the merge.
 
-`Reviews` allow you to peer review changes on a source branch before merging them into a target branch.
+Currently, conflicts are merged as part of the update operation, and can be resolved manually with a subsequent commit. We plan to improve this in the near future.
 
-To create one, navigate to the `Reviews` page using the left navigation bar and click the `Create review` button.
+## Review changes
 
-First select a source branch to review and a target branch to merge into. Use the diff to inspect the differences between the branches and ensure you've selected the right ones. 
+### Create a review
 
-Next, name your review, assign a reviewer(s) and click the `Create review` button.
+A [reference/#Review] allows you to peer review changes on a source branch before merging them into a target branch.
 
-### Perform a review
+To create one, navigate to the Reviews page using the left navigation bar and click the Create review button.
 
-On creating a review, you are redirected to your review. If you have assigned yourself as a reviewer, you can proceed through this workflow. 
+First select a source branch to review and a target branch to merge into. Check the diff shows the expected changes.
 
-If you have been assigned to a review by another team member, navigate to the `Reviews` page using the left navigation bar, find the review you are assigned to in the list and select it.
+Next, name your review, assign a reviewer(s) and click the Create review button.
 
-In the review you can use the activity tab to write comments, the changes tab to review changes to `artifacts` and commit additional changes, and the merge tab to merge changes from your source into your target branch.
+### Perform a review
 
-Before you can merge, at least one reviewer must approve the changes and the automated merge checks must pass.
+In the review, review assignees can use the activity tab to write comments, the changes tab to review changes and commit additional changes, and the merge tab to merge changes from a source into a target branch.
 
-Automated merge checks will fail when:
+Before you can merge, at least one reviewer must approve the changes and the automated merge checks must pass.
 
-- The target branch has diverged from the source branch: you must perform a branch update on your source branch before merging
-- There are uncommitted changes on your source or target branches: you will need to commit these before merging
-- There are merge conflicts on your source branch: you will need to resolve conflicts before merging.
+Automated merge checks will fail when:
 
-Once these checks have passed, click the `Merge` button to fast forward merge your source into your target branch.
+- The target branch has diverged from the source branch: you must perform a branch update on your source branch before merging
+- There are uncommitted changes on your source or target branches: you will need to commit these before merging
+- There are merge conflicts on your source branch: you will need to resolve conflicts before merging.
 
-Once merged, the status of your review will change from `pending` to `merged`. You can now navigate to the target branch in your repository and observe the integrated changes.
+Once these checks have passed, click the Merge button to fast forward merge your source into your target branch.
 
-## Build and publish
+Once merged, the status of your review will change from `pending` to `merged`. You can now navigate to the target branch in your repository and observe the integrated changes.
 
-`Jobs` allow you to define custom jobs in Modify that trigger an HTTP request to an external service for execution. 
+## Run jobs
 
-Common jobs include building and publishing artifacts in Modify.
+A [reference/#Job] allows you to trigger an external service with an HTTP request to execute a job. External services include cloud services like GitHub Actions and AWS Lamdas, as well as your own infrastructure. 
+
+Common jobs include building and publishing artifacts in Modify to the web or document formats like PDF and MS Word.
 
 ### Define a job
 
-To define a job, navigate to the `jobs` page using the left navigation bar and click the `Create job` button.
+To define a job, navigate to the Jobs page using the left navigation and click the Create job button.
 
-For a job to any external service that can be called with an HTTP request, click the generic job option. Here you can define the HTTP method, target URL, headers, payload and basic authentication you want to use to trigger your job.
+The quickest way to get going is to use an open source example job:
 
-For a job run on GitHub Actions, click the GitHub Actions option. The data provided in the form will be used to construct an HTTP POST request to the GitHub REST API, triggering a `workflow_dispatch` event ([see GitHub docs](https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows#workflow_dispatch)). Separately, you'll also need to define a workflow file in a Git repository defining your job. [Read here](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions#overview) for more on workflows. 
+- Publish a Next.js docs site to Vercel - [see instructions](https://github.com/modifyhq/nextra-vercel-example)
+- Publish a Gatsby site to AWS S3 - [see instructions](https://github.com/modifyhq/gatsby-aws-example)
+- Publish a Jekyll site to GitHub pages - [see instructions](https://github.com/modifyhq/jekyll-github-example)
 
-You can also use Modify-provided examples to boostrap the work you need to do outside of Modify with external services to get your job set up:
+Example jobs help you set up Modify and external services quickly, and prefill parts of Modify's job definition template.
 
-- Publish a simple [Jekyll site](https://jekyllrb.com/) to [GitHub pages](https://pages.github.com/) (instructions [here](https://github.com/modifyhq/jekyll-demo))
-- Publish a simple [Gatsby site](https://www.gatsbyjs.com/) to [AWS S3](https://aws.amazon.com/s3/) (instructions [here](https://github.com/modifyhq/gatsby-demo))
+#### GitHub Actions
+For a job executed on GitHub Actions, click the GitHub Actions option. The data provided in the form will be used to construct an HTTP POST request to the GitHub REST API, triggering a `workflow_dispatch` event ([see GitHub docs](https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows#workflow_dispatch)). Separately, you'll also need to define a workflow file in a Git repository defining your job. [Read here](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions#overview) for more on workflows.
 
-These tutorials provide step-by-step guides for configuring Modify (including example job definitions) and an external service to run a build with a popular static site tool and publish the resulting artifacts to the web.
+#### Generic jobs
+
+For a job executed on a general external service, click the generic job option. Here you can define the HTTP method, target URL, headers, payload and basic authentication to trigger your job.
 
 ### Run a job
 
-Once defined, your job will appear in a list on the `jobs` page. To trigger it manually, click the start button on the right of the list item, or click on the job's name to show the job's detail page and trigger it using the same button on this screen.
+Once defined, your job will appear in a list on the Jobs page. To trigger it, click the start button on the list or detail pages.
 
-Your job will now run and will be added to the list with an `in progress` status below the job definition on the job's detail page. Once the job completes, provided the job includes a notification to the Modify API of completion status (as with the jobs in all Tutorials), the status of your job will change to `Finished`. 
+Your job will now run and marked with an `In progress` status on the detail page. Once the job completes, provided the job includes a notification to the Modify API of completion status (as with all example jobs), the status of your job will change to `Finished`. 
+
 Click the refresh button to get the up-to-date status.
 
-## Manage settings
+## Manage settings
 
 ### Teams
 
-You can manage your team settings by clicking the `Manage teams` label in the `Team` dropdown in the breadcrumb.
+You can manage your team settings by clicking Manage teams in the breadcrumb's Team dropdown.
 
-Click on the team's name and use the tabs to manage your `Workspaces`, team members and `Connector` credentials.
+Click on the team's name and use the tabs to manage your workspaces, team members and connector credentials.
 
-On the Members tab, you can send email invites to new members, and manage invites and team members.
+On the Members tab, you can send email invites to new members, and manage invites and team members.
 
 ### Workspaces
 
-To add a new `Workspace`, click on the plus button in the workspace segment on the Mission Control page. To manage your `Workspaces`, click on the link on the workspace segment.
+To manage a workspace, click on the workspace name on the Mission Control page.
 
-To manage `workspace branches`, select the `Manage branches` label in the `Connector` dropdown in the `Repository's` breadcrumb or navigate to the `Connector` page using the left navigation bar.
+To manage workspace branches, select Manage branches in the breadcrumb's connector dropdown.
 
 ### Connectors
 
-To manage `Connectors`, select the `Manage connectors` label in the `Connector` dropdown in the `Repository's` breadcrumb or navigate to the `Connector` page using the left navigation bar.
+To manage connectors, select the Manage connectors label in the breadcrumb's connector dropdown or navigate to the connector page using the left navigation.
 
-You can add and remove `Connectors` to and from your base branch only, so make sure you're on this branch first using the breadcrumb or navigation links.
+You can add and remove connectors to and from your base branch only, so make sure you're on this branch first using the breadcrumb or navigation links.

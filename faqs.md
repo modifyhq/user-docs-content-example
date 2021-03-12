@@ -1,7 +1,8 @@
 ---
 id: faqs
 title: FAQs
-description: Frequently asked questions by users.
+description: Frequently asked questions
+kind: doc
 ---
 
 ## How do I make a feature request?
@@ -12,67 +13,53 @@ There are several ways you can add your vote for a feature request:
 - Send us an email with your request at [team@modifyhq.com](mailto:team@modifyhq.com)
 - Tweet at [@ModifyHQ](http://twitter.com/ModifyHQ) with your ideas
 
-We'll go through each request to collect the data and make sure it is added to our planning sessions and product roadmap. Thanks in advance for taking the time!
+We go through each request to collect data and make sure it is added to our planning sessions and roadmap. 
 
-## I found a bug! What should I do? 
+Thanks in advance for taking the time, we really appreciate it!
+
+## I found a bug! What should I do?
 
 If you find a bug, please send us a quick message on our [Discord server](https://discord.gg/NbePDqG) or email [support@modifyhq.com](mailto:support@modifyhq.com)
 
 If possible, please provide the following info to help us track down and resolve the problem quicker:
 
-- Modify version (click on your avatar at the bottom of the left navigation bar, and `About` in the menu)
+- Modify version (click on your avatar on the left navigation bar, and `About` in the menu)
 - Browser type and version
 - The URL of the Modify page where the bug is occurring (if applicable)
-- Screenshots, GIFs and videos of the bug are super helpful if you're able to send them!
+- Screenshots, GIFs and videos of the bug are also super helpful if you're able to send them!
 
-## What is an artifact?
+## What plain text formats does Modify support?
 
-Check out [reference] for definitions of all Modify concepts, including `artifacts`.
+We provide editors for any text file format (markdown, MDX, yaml, csv, json, xml, plain text) along with live previews. 
 
-## What plain text formats are supported?
+We also provide viewers for common image formats (png, jpeg, svg) and you can download binary files for formats that don't have viewers.
 
-Markdown (most of the GitHub-flavoured markdown spec), [MDX](https://mdxjs.com/) and yaml. 
+MS Word documents (`*.docx`) will also be converted to markdown files automatically, to enable you to edit them and add front matter.
 
-Send us a feature request if you'd like other formats supported!
+## Do I need to commit changes I make? 
 
-## Do I need to commit changes to files? 
+Uncommitted changes to files and directories in connectors are saved to Modify's database as your working copy, so you won't lose them if you don't commit them.
 
-Uncommitted changes are saved to Modify's database, so you won't lose them if you don't commit them. 
+However, we encourage you to commit changes frequently, as doing so writes them to a Git repository configured in a connector. 
 
-However, since committing also pushes them to a remote branch defined in a connector, we recommend you do, as it's a good way for you to retain access to your data.
+If you're using a connector to an external Git provider, committing often means you'll able to access fresh data outside of Modify.
 
-## How do I edit files in GitHub/Bitbucket connectors?
+## Can I use Modify interchangeably with my IDE?
 
-Artifacts and directories in a GitHub or Bitbucket connector's remote branch are protected by default.
+Yes! When using connectors to external Git providers, the base branch configured can be worked on outside of Modify using your normal workflow and tools. 
 
-You'll therefore need to create an editable workspace branch before you can edit the connector's contents. 
+Check out [[reference/#Branches-on-external-Git-provider-connectors]] for more. 
 
-To do this, click the branch button in the top right of the repository's header bar and complete the form.
+## How do I export data from a Modify-hosted connector?
 
-## Can I make changes to a Git repo outside of Modify?
-
-Changes integrated into your remote branch outside of Modify are automatically read by Modify and shown in the remote branch in Modify's repository page. 
-
-During a review, changes on a downstream workspace branch are integrated into the remote branch via a fast forward merge. If this cannot be performed due to divergences, these will need to be integrated, and conflicts resolved, before a fast forward merge can be performed.
-
-See `External Git provider connectors` in [reference] for more detail. 
-
-## How can I export my data? 
-
-All changes to files in GitHub and Bitbucket connectors are persisted in GitHub and Bitbucket. 
-
-Exports from Modify Git connectors are a feature on our roadmap that we will prioritise based on feedback. 
+You can't do this, yet... but we'll be adding exports from Modify connectors to external Git providers soon!
 
 ## Can I define my own jobs? 
 
-Yes. Jobs can be executed on any external system that can be triggered by an HTTP call.
-
-If you would like to trigger jobs using a different method, please send us a feature request! 
+Yes! Jobs can be executed on any external system that can be triggered by an HTTP request.
 
 ## Does Modify have an API I can use? 
 
-Not yet, but a public API is on the roadmap! We're still collecting use cases to help our team with the implementation. 
+Not yet, but a public API is on the roadmap! We're currently collecting use cases, so we'd love to hear about what you'd use it for.
 
-It would be super helpful if you could tell us: What would you use an API for?
-
-Please send us a message on our [Discord server](https://discord.gg/NbePDqG) or [tweet at us](https://twitter.com/ModifyHQ) with your use case. Thanks! 🙏
+Please send us a message on our [Discord server](https://discord.gg/NbePDqG) or [tweet at us](https://twitter.com/ModifyHQ) with your use case. Thanks!

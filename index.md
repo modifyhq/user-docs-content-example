@@ -2,29 +2,21 @@
 id: index
 title: Index
 description: What makes Modify different. 
+kind: doc
 ---
 
 # Modify
 
 ## Why Modify?
 
-Modify is a modern publishing worflow for software teams. 
-
-What's different about Modify is that it helps software teams manage content with the tools they already know and love.
-
-<InfoMessage header="Key differentiator" content="With Modify, software teams get to use markdown/MDX, Git and popular build tools to create, build and publish content."/>
+Modify helps software teams have fun creating long-form content with `<Component />`s!
 
 ## Features
 
-- **Text editor with real-time collaboration** - powerful text editor that supports real-time collaboration between teammates 
-- **Markdown and MDX** - create docs in markdown, and add React components using MDX to enrich docs visually.
-- **Yaml registers** - version controlled tabular data in yaml with schemas, and changes that can be preview using the register GUI.
-- **Git connectors** - read-write integrations with Git repositories hosted in Modify, GitHub and Bitbucket (with OAuth  external providers) for version control and users staying in control of their data. 
-- **Front matter** - supported in markdown, MDX and yaml files for improved searching and referencing
-- **Configurable layouts** - configure layouts with editor, preview, register, card and form views. Users can choose what interface works best for them.
-- **Artifact search** - search for artifacts using `id` and `title` fields defined in front matter
-- **Relationships** - defined in text and visualise as a graph that can be use to navigate round docs instead of the repository's tree view.
-- **Text-based diagrams** [mermaid](https://mermaid-js.github.io/mermaid/), [graphviz](https://graphviz.org/) and [nomnoml](https://nomnoml.com/) for version-controlled diagrams that can be created without leaving your editor.
-- **Workspace branching** - branch your workspace and all its connectors to work in isolation from your team.
-- **Reviews** - Review changes on a source branch and merge to a target branch once approvals and automated checks have passed.
-- **Jobs** - Run build and publish jobs using using popular build tools (e.g. Gatsby, NextJS) CI servies (GitHub Actions) and hosting services (Netlify, AWS S3).`
+- **MDX** - write in markdown, add MDX using a growing library of built-in components to enrich your docs visually. Coming soon - an npm package that will let you use our built-in MDX and other Modify syntax in your React and Vue apps, and support for third-party components, so you can bring your own! ✨ 
+- **Collaboration** - powerful text editor that supports real-time collaboration between team mates. Coming soon - comments for adhoc review, reviews for formal review that improves upon the typical Pull Request workflow - with no PR ping pong!
+- **Jobs** - Run build and publish jobs using using popular site generators (e.g. Gatsby, NextJS) and cloud services Netlify, AWS S3). We provide a number of open source examples to get you going.
+- **Git** - read-write integrations with Git repositories hosted on Modify, GitHub and Bitbucket. No migration costs if your data is already stored in Git, and maximum control of your data.
+- **Tables that don't suck** - No more markdown tables. Define schemas in yaml and work on the source in your editor, or use table, form and card graphical views. Version-controlled tables in text, with a GUI.
+- **Relationships** - define relationships between files in text and visualise as a graph with clickable nodes.
+- **Diagrams** - text-based diagrams using [mermaid](https://mermaid-js.github.io/mermaid/), [graphviz](https://graphviz.org/) and [nomnoml](https://nomnoml.com/).
