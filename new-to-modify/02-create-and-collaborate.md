@@ -76,15 +76,15 @@ You can upload any files to your workspace. We provide editors for any text file
 
 We also provide viewers for common image formats (png, jpeg, svg) and you can download binary files for formats that don't have viewers.
 
-MS Word documents (`*.docx`) will also be converted to markdown files automatically, to enable you to edit them and add front matter.
+MS Word documents (`*.docx`) will also be converted to markdown files automatically, to enable you to edit them and add frontmatter.
 
-### Add front matter
+### Add frontmatter
 
-[reference/#Front-matter] contains structured metadata that is indexed and can be used to search for and reference artifacts in your workspace using relationships and MDX elements. 
+[reference/#Frontmatter] contains structured metadata that is indexed and can be used to search for and reference artifacts in your workspace using relationships and MDX elements. 
 
-You can add it to a markdown doc or yaml register by clicking the Add front matter button in the editor or preview view headers and filling out form. 
+You can add it to a markdown doc or yaml register by clicking the Add frontmatter button in the editor or preview view headers and filling out form. 
 
-Alternatively, you can add front matter directly to your artifact, ensuring that it is the first thing in your file and takes the form of valid yaml between triple-dashed lines e.g.
+Alternatively, you can add frontmatter directly to your artifact, ensuring that it is the first thing in your file and takes the form of valid yaml between triple-dashed lines e.g.
 
 ```yaml
 ---
@@ -101,7 +101,7 @@ Currently, `id` and `title` fields are indexed automatically and searchable usin
 
 - using an artifact's `id` like so `[id-goes-here]`
 - using the Link MDX component like so `<Link artifactId="..."/>`
-- or by adding a relationship to front matter like so:
+- or by adding a relationship to frontmatter like so:
 
 ```yaml
 ---

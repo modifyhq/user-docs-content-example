@@ -33,7 +33,7 @@ We provide editors for any text file format (markdown, MDX, yaml, csv, json, xml
 
 We also provide viewers for common image formats (png, jpeg, svg) and you can download binary files for formats that don't have viewers.
 
-MS Word documents (`*.docx`) will also be converted to markdown files automatically, to enable you to edit them and add front matter.
+MS Word documents (`*.docx`) will also be converted to markdown files automatically, to enable you to edit them and add frontmatter.
 
 ## Do I need to commit changes I make? 
 

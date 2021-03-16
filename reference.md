@@ -110,7 +110,7 @@ You can edit and collaborate on artifacts with any text file format (markdown, M
 
 ### Doc
 
-Docs are version-controlled markdown and [MDX](https://mdxjs.com/) files with yaml front matter stored in a Git connector.
+Docs are version-controlled markdown and [MDX](https://mdxjs.com/) files with yaml frontmatter stored in a Git connector.
 
 Currently we support most of the [GitHub Flavoured Markdown specification](https://github.github.com/gfm/) and Modify-provided MDX.
 
@@ -143,7 +143,7 @@ Registers are also defined using text files, so their configuration is also vers
 
 #### How do register rows work?
 
-Each row is a file that has fields mapped from either the front matter or content parts of the file.
+Each row is a file that has fields mapped from either the frontmatter or content parts of the file.
 
 You can use the table, board, form or editor views to edit the values of a field, and only the values changed will be modified in the underlying file.
 
@@ -151,7 +151,7 @@ You can also collaboratively edit rows of a register with other members of your 
 
 #### What kind of files can a register have?
 
-Register rows can either be multipart yaml files (i.e. both front matter and content) or markdown files with frontmatter delimited by triple-dashed lines.
+Register rows can either be multipart yaml files (i.e. both frontmatter and content) or markdown files with frontmatter delimited by triple-dashed lines.
 
 Data can be selected out of the body of markdown files using a syntax similar to CSS-selectors (coming soon).
 
@@ -163,11 +163,11 @@ This is a yaml file that you can edit in the text editor, but any changes you ma
 
 You can use the editor or the graphical schema editor to define your register's schema.
 
-### Front matter
+### Frontmatter
 
-Front matter is user-defined metadata formatted as valid yaml located at the top of markdown, MDX and yaml files. 
+Frontmatter is user-defined metadata formatted as valid yaml located at the top of markdown, MDX and yaml files. 
 
-Currently front matter supports the following fields:
+Currently frontmatter supports the following fields:
 
 ```yaml
 ---
@@ -181,7 +181,7 @@ Values for `id` and `title` fields can be used to search for and reference artif
 
 ### Relationships
 
-Relationships are references between artifacts defined in text, either inline or in front matter using an artifact's `id`.
+Relationships are references between artifacts defined in text, either inline or in frontmatter using an artifact's `id`.
 
 You can use the editor's search modal (press CTRL+SPACE keys to launch), and search for artifacts by `id` and `title`.
 
