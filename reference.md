@@ -1,7 +1,6 @@
 ---
 id: reference
 title: Reference
-description: Modify's domain model and principal concepts.
 kind: doc
 ---
 

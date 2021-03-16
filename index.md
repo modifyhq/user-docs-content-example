@@ -1,7 +1,6 @@
 ---
 id: index
 title: Index
-description: What makes Modify different. 
 kind: doc
 ---
 

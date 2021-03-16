@@ -1,7 +1,6 @@
 ---
 id: faqs
 title: FAQs
-description: Frequently asked questions
 kind: doc
 ---
 

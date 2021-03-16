@@ -1,7 +1,6 @@
 ---
 id: readme
 title: README
-description: README!
 kind: doc
 ---
 
@@ -37,7 +36,7 @@ You can read more on features in [index].
 
 The docs in this repo are a work in progress. Modify is evolving fast, and so are our docs. 
 
-They will be published soon as a website using [Docusaurus](https://v2.docusaurus.io/), and we'll also be releasing the job as an OSS example for you to use for your own docs!
+They will be published soon as a website using [Docusaurus](https://v2.docusaurus.io/), and we'll also be releasing the job we use to do this as an OSS example for you to use for your own docs!
 
 ## Feedback
 
